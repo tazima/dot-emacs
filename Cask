@@ -11,7 +11,7 @@
 (depends-on "smartparens")
 (depends-on "yasnippet")
 (depends-on "undo-tree")
-(depends-on "mark-multiple")
+(depends-on "multiple-cursors")
 (depends-on "coffee-mode")
 (depends-on "jade-mode")
 (depends-on "feature-mode")
