@@ -6,6 +6,7 @@
 (depends-on "helm-c-yasnippet")
 (depends-on "helm-ls-git")
 (depends-on "helm-git-grep")
+(depends-on "color-moccur")
 (depends-on "magit")
 (depends-on "popwin")
 (depends-on "smartparens")

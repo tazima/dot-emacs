@@ -30,6 +30,11 @@
 (global-set-key (kbd "C-c C-g") 'helm-ls-git-ls)
 (global-set-key (kbd "C-c g") 'helm-git-grep)
 (global-set-key (kbd "C-c M-g") 'helm-git-grep-at-point)
+(global-set-key (kbd "M-o") 'helm-occur)
+(global-set-key (kbd "C-M-o") 'occur-by-moccur)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; cask
 (require 'cask "~/.cask/cask.el")
@@ -59,13 +64,11 @@
 ;; helm-git-grep
 (require 'helm-git-grep)
 
-;; TODO helm-c-moccur-occur-by-moccur
+;; helm-occur
+(require 'color-moccur)
 
 ;; multiple-cursors
 (require 'multiple-cursors)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; undo-tree
 (require 'undo-tree)
