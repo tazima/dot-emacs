@@ -21,5 +21,5 @@
 (depends-on "less-css-mode")
 (depends-on "scss-mode")
 (depends-on "flymake-easy")
-
+(depends-on "color-theme-solarized")
 

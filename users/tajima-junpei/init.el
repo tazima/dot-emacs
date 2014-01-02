@@ -2,6 +2,6 @@
 (set-face-attribute 
  'default nil
  :family "CosmicSansNeueMono"
- :height 150)
+ :height 110)
 
-(load-theme 'pastels-on-dark t)
+(load-theme 'solarized-dark t)
