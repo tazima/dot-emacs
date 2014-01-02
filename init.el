@@ -89,6 +89,12 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node$" . js2-mode))
 
+;; 行番号
+(require 'linum)
+(global-linum-mode t)
+;; 5桁分の領域を確保して行番号のあとにスペースを入れる
+(setq linum-format "%4d ")
+
 ;; ユーザ固有のelファイルをロード
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
