@@ -8,12 +8,7 @@
 
 ;; テーマ
 (setq custom-theme-directory (expand-file-name "themes" user-emacs-directory))
-
-;; フォント
-(set-face-attribute 
- 'default nil
- :family "CosmicSansNeueMono"
- :height 95)
+(load-theme 'dichromacy t)
 
 ;; デフォルト
 (setq-default tab-width 2)
@@ -26,8 +21,7 @@
 (when window-system
   (menu-bar-mode -1)
   (tool-bar-mode -1)
-  (scroll-bar-mode -1)
-  (load-theme 'pastels-on-dark t))
+  (scroll-bar-mode -1))
 
 ;; キーバインド
 (global-set-key (kbd "C-c h") 'helm-mini)
