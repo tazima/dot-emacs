@@ -16,6 +16,7 @@
 (setq-default make-backup-files nil)
 (setq-default auto-save-default nil)
 (fset 'yes-or-no-p 'y-or-n-p)
+(windmove-default-keybindings)
 
 ;; window-system
 (when window-system
