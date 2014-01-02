@@ -1,4 +1,6 @@
 
+(add-to-list 'load-path user-emacs-directory)
+
 ;; ユーザ固有のディレクトリをload-pathに追加
 (setq user-settings-dir
       (concat user-emacs-directory "users/" user-login-name))
@@ -85,6 +87,12 @@
 ;; flycheck
 (require 'flycheck)
 (global-flycheck-mode t)
+
+;; js2-modeのセットアップ
+(eval-after-load 'js2-mode '(require 'setup-js2-mode))
+
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'magic-mode-alist '("#!/usr/bin/env node$" . js2-mode))
 
 ;; ユーザ固有のelファイルをロード
 (when (file-exists-p user-settings-dir)

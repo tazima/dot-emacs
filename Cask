@@ -12,6 +12,7 @@
 (depends-on "yasnippet")
 (depends-on "undo-tree")
 (depends-on "multiple-cursors")
+(depends-on "js2-mode")
 (depends-on "coffee-mode")
 (depends-on "jade-mode")
 (depends-on "feature-mode")
