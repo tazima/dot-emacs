@@ -1,0 +1,3 @@
+[submodule "site-lisp/express-snippets"]
+	path = site-lisp/express-snippets
+	url = https://github.com/p-baleine/express-snippets.el.git
