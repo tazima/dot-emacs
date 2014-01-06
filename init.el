@@ -92,6 +92,15 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node$" . js2-mode))
 
+;; tern
+(add-to-list 'load-path (expand-file-name "node_modules/tern/emacs" user-emacs-directory))
+(require 'tern)
+(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+(eval-after-load 'tern
+  '(progn
+     (require 'tern-auto-complete)
+     (tern-ac-setup)))
+
 ;; 行番号
 (require 'linum)
 (global-linum-mode t)

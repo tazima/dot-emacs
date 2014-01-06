@@ -1,0 +1,21 @@
+{
+  "name": "dot-emacs",
+  "version": "0.0.0",
+  "description": "Install [Cask](https://github.com/cask/cask)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tazima/dot-emacs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tazima/dot-emacs/issues"
+  },
+  "dependencies": {
+    "tern": "git+https://github.com/marijnh/tern.git"
+  }
+}
