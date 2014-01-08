@@ -21,6 +21,10 @@
 (depends-on "sws-mode")
 (depends-on "less-css-mode")
 (depends-on "scss-mode")
+(depends-on "php-mode")
+(depends-on "rinari")
+(depends-on "rhtml-mode")
+(depends-on "robe")
 (depends-on "flymake-easy")
 (depends-on "color-theme-solarized")
 
